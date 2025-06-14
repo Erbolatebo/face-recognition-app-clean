@@ -1,0 +1,12 @@
+*.h5
+*.db
+*.log
+*.npy
+__pycache__/
+instance/
+user_data/
+web_*.txt
+testing_log.txt
+*.checkpoint.ipynb
+*.ipynb
+*.html

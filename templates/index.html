@@ -1,0 +1,31 @@
+<!-- templates/index.html -->
+{% extends "base.html" %}
+
+{% block title %}Басты - Face Recognition System{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>🔐 Face Recognition System</h1>
+    <p style="text-align: center; margin-bottom: 30px; color: #666;">
+        Бет-әлпетті тану және өміршеңдік мүмкіндігін тексеру арқылы аутентификация жүйесі
+    </p>
+    
+    <button class="btn" onclick="window.location.href='/login'">
+        Жүйеге кіру
+    </button>
+    
+    <button class="btn btn-secondary" onclick="window.location.href='/register'">
+        Тіркелу
+    </button>
+    
+    <div style="margin-top: 40px; padding: 20px; background: #f5f5f5; border-radius: 10px;">
+        <h3 style="color: #667eea; margin-bottom: 15px;">Жүйе мүмкіндігі:</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li style="padding: 8px 0;">✅ Өміршеңдікті анықтау (anti-spoofing)</li>
+            <li style="padding: 8px 0;">🕶️ Аксессуарды анықтау (көзілдірік, маска, қалпақ)</li>
+            <li style="padding: 8px 0;">👤 Жүйеге кіру үшін бетті тану</li>
+            <li style="padding: 8px 0;">🔒 Қауіпсіз деректерді сақтау</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

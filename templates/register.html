@@ -1,0 +1,35 @@
+<!-- templates/register.html -->
+{% extends "base.html" %}
+
+{% block title %}Тіркелу - Face Recognition System{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>📝 Тіркелу</h1>
+    
+    {% if error %}
+    <div class="error">{{ error }}</div>
+    {% endif %}
+    
+    <form method="POST">
+        <div class="form-group">
+            <label for="username">Қолданушы есімі:</label>
+            <input type="text" id="username" name="username" required 
+                   placeholder="Введите имя пользователя">
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Құпия сөз:</label>
+            <input type="password" id="password" name="password" required 
+                   placeholder="Введите пароль">
+        </div>
+        
+        <button type="submit" class="btn">Тіркелу</button>
+    </form>
+    
+    <div class="links">
+        <p>Аккаунт бар ма? <a href="/login">Кіру</a></p>
+        <p><a href="/">← Басты бетке бару</a></p>
+    </div>
+</div>
+{% endblock %}

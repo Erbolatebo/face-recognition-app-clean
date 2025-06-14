@@ -1,0 +1,25 @@
+<!-- templates/dashboard.html -->
+{% extends "base.html" %}
+
+{% block title %}Басқару перне тақтасы - Face Recognition System{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>🎉 Қош келдіңіз!</h1>
+    
+    <div class="success" style="margin-bottom: 30px;">
+        Сіз жүйеге сәтті кірдіңіз, {{ username }}!
+    </div>
+    
+    <div style="background: #f5f5f5; border-radius: 15px; padding: 25px; margin-bottom: 30px;">
+        <h3 style="color: #667eea; margin-bottom: 15px;">Қолданушы жайлы ақпарат:</h3>
+        <p style="margin: 10px 0;"><strong>Қолданушы есімі:</strong> {{ username }}</p>
+        <p style="margin: 10px 0;"><strong>Күй:</strong> <span style="color: #4caf50;">Активті</span></p>
+        <p style="margin: 10px 0;"><strong>Бетті тексеру:</strong> <span style="color: #4caf50;">Конфигурацияланған</span></p>
+    </div>
+    
+    <button class="btn" onclick="window.location.href='/logout'">
+        Жүйеден шығу
+    </button>
+</div>
+{% endblock %}
